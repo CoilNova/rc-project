@@ -1,4 +1,5 @@
 {
   "test": "test examplr",
-  "lang": "English"
+  "lang": "English",
+  "notFound": "Page not found"
 }

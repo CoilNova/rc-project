@@ -10,15 +10,22 @@ describe('classNames', () => {
     });
 
     test('should filter out falsy values in additional classes', () => {
-        expect(classNames('main', {}, ['', 'extra', null, undefined, 'another'])).toBe('main extra another');
+        expect(classNames(
+            'main',
+            {},
+            ['', 'extra', null, undefined, 'another'],
+        ))
+            .toBe('main extra another');
     });
 
     test('should include mods that are true', () => {
-        expect(classNames('main', { active: true, disabled: false })).toBe('main active');
+        expect(classNames('main', { active: true, disabled: false }))
+            .toBe('main active');
     });
 
     test('should ignore mods with falsy values', () => {
-        expect(classNames('main', { visible: false, hovered: undefined })).toBe('main');
+        expect(classNames('main', { visible: false, hovered: undefined }))
+            .toBe('main');
     });
 
     test('should handle string values in mods (truthy)', () => {
