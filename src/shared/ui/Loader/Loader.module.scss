@@ -5,7 +5,7 @@
 
   --bg: var(--inverted-bg-color);
   --bg-transparent: rgb(0 0 0 / 0%);
-  --c: linear-gradient(var(--bg) 0 0);
+  --c: linear-gradient(to right, var(--bg), #000);
   --r1: radial-gradient(farthest-side at bottom, var(--bg) 93%, var(--bg-transparent));
   --r2: radial-gradient(farthest-side at top, var(--bg) 93%, var(--bg-transparent));
 
