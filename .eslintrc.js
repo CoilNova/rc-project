@@ -42,9 +42,9 @@ module.exports = {
         'import/no-extraneous-dependencies': 'off',
         'no-underscore-dangle': 'off',
         'i18next/no-literal-string': ['error',
-            { markupOnly: true, ignoreAttribute: ['data-testid'] },
+            { markupOnly: true, ignoreAttribute: ['data-testid', 'to'] },
         ],
-        'max-len': ['error', { ignoreComments: true, code: 100 }],
+        'max-len': ['error', { ignoreComments: true, code: 150 }],
     },
     globals: {
         __IS_DEV__: true,
