@@ -1,5 +1,7 @@
 {
   "test": "test examplr",
   "lang": "English",
-  "notFound": "Page not found"
+  "notFound": "Page not found",
+  "pageError": "Something goes wrong",
+  "refreshPage": "Refresh page"
 }
