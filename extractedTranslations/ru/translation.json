@@ -2,7 +2,10 @@
   "about": "about",
   "aboutaasas": "aboutaasas",
   "lang": "lang",
+  "main": "main",
+  "mainPage": "mainPage",
   "notFound": "Страница не найдена",
   "pageError": "Произошла ошибка",
-  "refreshPage": "refreshPage"
+  "refreshPage": "refreshPage",
+  "toggle": "toggle"
 }

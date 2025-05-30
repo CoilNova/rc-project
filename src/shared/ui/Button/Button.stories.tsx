@@ -3,7 +3,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 
 import { ThemeDecorator } from 'shared/config/storybook/themeDecorator/themeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonSize, ThemeButton } from './Button';
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
@@ -34,4 +34,40 @@ export const Outlined = Template.bind({});
 Outlined.args = {
     children: 'text',
     theme: ThemeButton.OUTLINE,
+};
+
+export const Background = Template.bind({});
+Background.args = {
+    children: 'text',
+    theme: ThemeButton.BACKGROUND,
+};
+
+export const InvertedBackground = Template.bind({});
+InvertedBackground.args = {
+    children: 'text',
+    theme: ThemeButton.BACKGROUND_INVERTED,
+};
+
+export const SquareL = Template.bind({});
+SquareL.args = {
+    children: '<',
+    theme: ThemeButton.BACKGROUND_INVERTED,
+    square: true,
+    size: ButtonSize.L,
+};
+
+export const SquareM = Template.bind({});
+SquareM.args = {
+    children: '<',
+    theme: ThemeButton.BACKGROUND_INVERTED,
+    square: true,
+    size: ButtonSize.M,
+};
+
+export const SquareXL = Template.bind({});
+SquareXL.args = {
+    children: '<',
+    theme: ThemeButton.BACKGROUND_INVERTED,
+    square: true,
+    size: ButtonSize.XL,
 };
