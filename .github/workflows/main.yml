@@ -21,7 +21,6 @@ jobs:
         run: npm install
       - name: build
         run: npm run build:prod
-        if: always()
       - name: lint ts
         run: npm run lint:ts
         if: always()
@@ -36,3 +35,4 @@ jobs:
         if: always()
       - name: screenshot test
         run: npm run test:ui:ci
+        if: always()
